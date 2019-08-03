@@ -5,7 +5,7 @@
     <title>Title</title>
     <style>
         label {width: 100px; display: inline-block; vertical-align:top; }
-        div {display:table; margin-left:auto; margin-right:auto; }
+
         .orderinfo {  width: 250px; }
         input[type='number'] { width:60px; }		
 		ul > li { list-style-type:none; }
@@ -22,5 +22,65 @@
 		  다시작성 : form 입력 값 초기화
 	  -->
     <h1>상품 주문서</h1>
+    <form action="" method="GET" >
+        <fieldset>
+            <legend>개인정보</legend>
+            <div>
+                <label for="a1">이름</label>
+                <input type="text" name="" id="a1" placeholder="이름을 입력하시오">
+            </div>
+            <div>
+                <label for="a2">연락처</label>
+                <input type="text" name="" id="a2" placeholder="연락처를 입력하시오">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <div>
+                <label for="a3">주소</label>
+                <input type="text" name="" id="a3" required style="width: 300px;">
+            </div>
+            <div>
+                <label for="a4">전화번호</label>
+                <input type="tel" name="" id="a4" required>
+            </div>
+            <div>
+                <label for="a5">메 모</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>주문 정보</legend>
+            <div>
+                <input type="checkbox" name="e1" id="a6" checked>
+                <label for="a6" class="orderinfo">과테말라 안티구아 (100g)</label>
+                <input type="number" name="" id="a6">
+            </div>
+            <div>
+                <input type="checkbox" name="e1" id="a7">
+                <label for="a7" class="orderinfo">인도네시아 만텔링 (100g)</label>
+                <input type="number" name="" id="a7">
+            </div>
+            <div>
+                <input type="checkbox" name="e1" id="a8">
+                <label for="a8" class="orderinfo">탐라는도다(블렌딩) (100g)</label>
+                <input type="number" name="" id="a8">
+            </div>
+        </fieldset>
+
+            <div style="text-align: center">
+                <input type="submit" value="주문하기">
+                <input type="reset" value="다시 작성" >
+            </div>
+
+        <!-- <div style="text-align: center">
+            <div style="magine: oato;">
+                <input type="submit" value="주문하기">
+                <input type="reset" value="다시 작성" >
+            </div>
+        </div> -->    
+    </form>
 </body>
 </html>
