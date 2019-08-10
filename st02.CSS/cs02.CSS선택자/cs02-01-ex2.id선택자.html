@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS3 Selector Basic Page</title>
+    <style>
+        /* css초기화 (브라우저마다 디폴트값이 다르기 때문에 초기화 셋팅. css작업에서는 무조건!  */
+        *{margin: 0; padding: 0;}
+
+    #header{
+        background-color: red;
+    }
+    #aside{
+        background-color: dodgerblue;
+        float: left;
+        width: 200px;
+    }
+    #content{
+        background-color: green;
+        float: right;
+        width: calc( 100% - 200px );
+    }
+    </style>
 </head>
 <body>
-    <div id="header"><h2>#header 태그</h2></div>
+    <header>
+        <div id="header">
+            <h2>#header 태그</h2>
+        </div>
+    </header>
     <div id="wrap">
         <div id="aside"><h2>#aside 태그</h2></div>
         <div id="content"><h2>#content 태그</h2></div>
     </div>
 </body>
-</html>
+</html>
