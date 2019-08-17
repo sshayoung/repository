@@ -8,8 +8,29 @@
             1. float를 이용하는 방법
             2. display 를 이용하는 방법
         */
-        
         /* 브라우저 스타일 초기화 */
+        * {margin: 0; padding: 0;}
+        p {
+            list-style: none;
+            float: left;
+            background-color: red;
+            width: 100px;
+            height: 50px;
+        }
+        p:nth-child(odd) {
+            background-color: darkred;
+        }
+        p:nth-child(even) {
+            background-color: red;
+        }
+        #first {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        #last {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -31,14 +52,14 @@
             5. 마지막 li 태그를 찾고 라운드 처리
     </pre>
     <ul>
-        <li>1번째</li>
-        <li>2번째</li>
-        <li>3번째</li>
-        <li>4번째</li>
-        <li>5번째</li>
-        <li>6번째</li>
-        <li>7번째</li>
-        <li>8번째</li>
+        <p id="first">1번째</p>
+        <p class="even">2번째</p>
+        <p class="odd">3번째</p>
+        <p class="even">4번째</p>
+        <p class="odd">5번째</p>
+        <p class="even">6번째</p>
+        <p class="odd">7번째</p>
+        <p id="last">8번째</p>
     </ul>
 </body>
-</html>
+</html>

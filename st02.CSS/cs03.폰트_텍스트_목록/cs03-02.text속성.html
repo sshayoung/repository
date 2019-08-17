@@ -3,6 +3,25 @@
 <head>
     <meta charset="utf-8">
     <title>텍스트 속성</title>
+    <style>
+        /* 텍스트 색상 지정 */
+        /* <p class = "color_hexa"> */
+        p.color_hexa {color: #09fa04;}
+        p.color_rgba {color: rgba( 233, 255, 12, 0.5);}
+        p.color_name {color: lightblue;}
+
+        /* 텍스트 수평 정렬 지정 */
+        p.align_left {text-align: left;}
+        p.align_center {text-align: center;}
+        p.align_right {text-align: right;}
+        p.align_justify {text-align: justify;}
+
+        /* 텍스트 밑줄 설정. a태그 설정시 많이 사용. */
+        p.decoration1 {text-decoration: none;}
+        p.decoration2 {text-decoration: underline;}
+        p.decoration3 {text-decoration: overline;}
+        p.decoration4 {text-decoration: line-through;}
+    </style>
 </head>
 <body>
     <pre>
@@ -30,7 +49,7 @@
 
     <hr>
 
-    <h2> 텍스트 밑줄 설정 </h2>
+    <h2> 텍스트 밑줄 설정. a태그 설정시 많이 사용. </h2>
     <p class = "decoration1"> 텍스트 밑줄 표시하지 않기!!! </p>
     <p class = "decoration2"> 텍스트 밑줄 표시!!! </p>
     <p class = "decoration3"> 텍스트 영역 위로 선 표시!!! </p>
@@ -38,4 +57,4 @@
 
 </body>
 </html>
-
+

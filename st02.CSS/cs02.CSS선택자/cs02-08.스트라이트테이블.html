@@ -3,6 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>반응 선택자: 스트라이프 테이블 만들기</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        * {cop}
+        
+        /* 1. 홀수 tr 을 찾고 배경색으로 lightcoral을 설정하시오 */
+        thead>tr>th {
+            background-color: black;
+            color: white;
+        }
+        /* 2. 짝수 tr 을 찾고 배경색으로 lightgray를 설정하시오 */
+        tbody>tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        /* 3. 마우스 오버시 배경색으로 lightblue를 설정하시오  */
+        tbody>tr:hover {
+            background-color: lightblue;
+        }
+        tbody td:hover {
+            background-color: lightcoral;
+        }
+    </style>
 </head>
 <body>
     <pre>    
@@ -10,7 +31,7 @@
         반응 선택자 -->  : 로 표기 
 
         1. 홀수 tr 을 찾고 배경색으로 lightcoral을 설정하시오
-        2. 짝수 tr 을 찾고 배경색으로 lightgray를 설정하시오         
+        2. 짝수 tr 을 찾고 배경색으로 lightgray를 설정하시오
         3. 마우스 오버시 배경색으로 lightblue를 설정하시오 
     </pre>
     <table>
