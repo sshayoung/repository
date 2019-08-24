@@ -3,6 +3,66 @@
 <head>
     <meta charset="utf-8">
     <title>배경 이미지</title>
+    <style>
+        *{margin: 0; padding: 0;}
+
+        /* body태그에 배경 이미지 설정:
+        background-image, background-repeat 사용.  */
+        body {
+            background-image: url(../images/bg1.png);
+            background-repeat: no-repeat;
+            background-repeat: repeat-x;
+            background-repeat: repeat-y;
+            background-repeat: repeat; 
+        }
+        div#color {background-color: aquamarine;}
+        div#color>div {
+            border: 1px solid black;
+            background-color: white;
+            margin: 50px 50px 0 0;
+        }
+        h2 {margin: 20px 0px;}
+        div#clip>div.bg1, div#clip>div.bg2, div#clip>div.bg3 {
+            width: 200px;
+            height: 300px;
+            background-color: cornflowerblue;
+            padding: 30px;
+            margin: 10px;
+            text-align: center;
+            border: 10px dotted darkblue;
+            float: left; 
+        }
+        #clip::after {clear: both; display:block; content:'';}
+
+        #origin>.bg1, #origin>.bg2, #origin>.bg3 {
+            width: 200px;
+            height: 300px;
+            background-color: white;
+            background-image: url(../images/bg5.png);
+            background-repeat: no-repeat;
+            padding: 30px;
+            margin: 10px;
+            text-align: center;
+            border: 1px solid white;
+            float: left; 
+        }
+        #origin>.bg1 {background-origin: border-box;}
+        #origin>.bg2 {background-origin: padding-box;}
+        #origin>.bg3 {background-origin: content-box;}
+        
+        #origin::after {clear: both; display:block; content:'';}
+
+        div#position>.bg1, #position>.bg2, #position>.bg3 {
+            background-image: url(../images/bg2.jpg);
+            width: 900px;
+            height: 30px;
+            padding: 150px 20px;
+            margin-top: 10px;
+        }
+        div#position>.bg1 {background-position: left top;}
+        div#position>.bg2 {background-position: left center;}
+        div#position>.bg3 {background-position: left bottom;}
+    </style>
 </head>
 <body>
 
@@ -129,4 +189,4 @@
         <div class="bg6">배경 이미지 사이즈 : 100% 100%</div>
     </div>
 </body>
-</html>
+</html>
