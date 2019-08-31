@@ -1,1 +1,49 @@
-<!DOCTYPE html><html lang="ko"><head>    <meta charset="utf-8" />    <title>HTML5 기초 문서</title></head><body>    <h1>body 섹션(section) 제목</h1>    <p>HTML5 문서는 각기 다른 섹션들로 구성된 문서입니다.</p>    <h2>HTML5에 새롭게 추가된 섹션요소</h2>    <ul>        <li>section</li>        <li>article</li>        <li>nav</li>        <li>aside</li>    </ul>    <h2>대한민국, 웹 브라우저 점유율</h2>    <ol>        <li>Internet Explorer</li>        <li>Firefox</li>        <li>Mobile Safari</li>        <li>Chrome</li>    </ol></body></html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML5 기초 문서</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body {font-family: "맑은고딕" ; color: white; }
+        h1, h2 {color: lightblue;}
+        /* 꽉 찬 페이지 배경 이미지 설정방법
+            1 이미지경로 --> background-image: url();
+            2 이미지 반복여부 --> background-repeat : no-repeat;
+            3 이미지 사이즈 --> background-size: cover;
+            4 이미지 스크롤 여부 --> background-attachment: fixed;
+            5 min-width, min-height 설정 (배경 최소크기)
+         */
+
+         body {
+            background-image: url(./images/bg.jpg);
+            background-repeat : no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            
+            min-width: 100%; /* x축으로 꽉찬화면*/
+            min-height: 100%; /* y축으로 꽉찬화면*/
+         }
+    </style>
+</head>
+<body>
+    <h1>body 섹션(section) 제목</h1>
+    <p>HTML5 문서는 각기 다른 섹션들로 구성된 문서입니다.</p>
+
+    <h2>HTML5에 새롭게 추가된 섹션요소</h2>
+    <ul>
+        <li>section</li>
+        <li>article</li>
+        <li>nav</li>
+        <li>aside</li>
+    </ul>
+
+    <h2>대한민국, 웹 브라우저 점유율</h2>
+    <ol>
+        <li>Internet Explorer</li>
+        <li>Firefox</li>
+        <li>Mobile Safari</li>
+        <li>Chrome</li>
+    </ol>
+</body>
+</html>

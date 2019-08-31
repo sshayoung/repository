@@ -3,6 +3,90 @@
 <head>
     <meta charset="utf-8">
     <title>HTML5 Basic Page</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body {
+            background-color: lightgray;
+             font-family: 맑은 고딕;
+             padding: 30px;}
+        div#page-wrapper {
+            margin: auto;
+            padding: 30px;
+            width: 900px;
+            border-radius: 20px;
+            background-color: white;
+        }
+        header#main-header {
+            padding: 10px 40px;
+            }
+        h2.master-description {
+            font-size: 12pt;
+            font-weight: normal;}
+        nav#main-navigation {
+            height: 25px;
+            border: 1px solid lightgray;
+            border-right-width: 0px;
+            border-left-width: 0px;
+            margin: 20px 0px;
+            padding: 5px 10px;
+        }
+        li.outer-menu-item {
+            line-height: 25px;
+            list-style: none;
+        }
+        li.inner-menu-item {
+            list-style: none;
+        }
+        div.pull-left {float: left}
+        div.pull-right {float: right}
+        span.menu-title {
+            float: left;
+            margin: 0 20px 0 0;}
+        nav#main-navigation::after {clear: both; display: block; content: "";}
+        li.outer-menu-item {float: left;}
+        li.outer-menu-item::after {clear: both; display: block; content: "";}
+        section#main-section {
+            float: left;
+            width: calc(100% - 230px);
+        }
+        aside#main-aside {
+            float: right;
+            width: 200px;}
+        div#content::after {clear: both; display: block; content: "";}
+        input {
+            line-height: 0;
+            float: left; (clear: both;)
+            margin: 0;
+            outline: 0px;
+        }
+        input.input-search {
+            width: 130px;
+            height: 23px;
+            border: 1px solid lightgray;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            text-indent: 5px;
+        }
+        input.input-search-submit {
+            width: 50px;
+            height: 25px;
+            border: 1px solid lightgray;
+            background-color: lightgray;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        h1.article-title {margin: 10px 0px;}
+        p.article-date {margin: 0 0 10px 0;}
+        div.aside-list {margin: 20px 0;}
+        div.aside-list>ul {
+            list-style: none;
+            text-indent: 10px;}
+        footer#main-footer {
+            width: calc(100% - 230px);
+            border-top: 1px solid lightgray;
+            margin: 10px 0px;
+        }
+    </style>
 </head>
 <body>
     <div id="page-wrapper">
@@ -17,31 +101,12 @@
                 <ul class="outer-menu">
                     <li class="outer-menu-item">
                         <span class="menu-title">HTML5</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
                     </li>
                     <li class="outer-menu-item">
                         <span class="menu-title">CSS3</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
                     </li>
                     <li class="outer-menu-item">
                         <span class="menu-title">JavaScript</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
                     </li>
                 </ul>
             </div>
@@ -98,7 +163,8 @@
         </footer>
     </div>
 </body>
-</html>
+</html>
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
