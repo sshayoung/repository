@@ -3,17 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>display 속성</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        ul>li {
+            list-style-type: none;
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        ul>li:nth-child(odd) {background-color: green;}
+        ul>li:nth-child(even) {background-color: red;}
+        li#first {
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+        li#last {
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        ul>li {margin: 0 0 0 -6px;}
+        li#first {margin: 0 0 0 0px;}
+    </style>
 </head>
 <body>
     <ul>
-        <li>1번째</li>
+        <li id=first>1번째</li>
         <li>2번째</li>
         <li>3번째</li>
         <li>4번째</li>
         <li>5번째</li>
         <li>6번째</li>
         <li>7번째</li>
-        <li>8번째</li>
+        <li id=last>8번째</li>
     </ul>
 </body>
 </html>

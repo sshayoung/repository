@@ -2,7 +2,24 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">    
-	<title>display flex</title>
+    <title>display flex</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        /* html 페이지의 높이 설정 : 100% */
+        html,body {height: 100%;}
+        /* 부모에 flex 설정 */
+        body {
+            display: flex;
+            flex-direction: column; /* 수직 설정*/
+        }
+        body>div {
+            flex-shrink: 0;
+        }
+        div.div1 {background-color: yellow;}
+        div.div2 {
+            background-color: orange;
+            flex-grow: 1;}
+    </style>  
 </head>
 
 <body>
@@ -19,4 +36,4 @@
     </div>
 </body>
 
-</html>
+</html>

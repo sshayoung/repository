@@ -3,6 +3,19 @@
 <head>
     <meta charset="utf-8">
     <title>position</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        div#wrap>div {height: 50px; margin: 0 10px;}
+        div#pos1 {background-color: burlywood;}
+        div#pos2 {background-color: chartreuse;}
+        div#pos3 {background-color: cornflowerblue;}
+
+        div#pos2 {
+            position: relative;
+            left: 200px; /* x축 */
+            top: 200px; /* y축 */
+        }
+    </style>
 </head>
 <body>
     <div id="wrap">
@@ -11,4 +24,4 @@
         <div id="pos3">세번째</div>
     </div>
 </body>
-</html>
+</html>

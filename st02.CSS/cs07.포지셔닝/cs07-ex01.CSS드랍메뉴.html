@@ -4,7 +4,35 @@
     <meta charset="UTF-8">
     <title>자식>자식>자식></title>
     <style>
+        *{margin: 0;padding: 0;}
+
+        ul,li {list-style-type: none;}
+        a {text-decoration: none;}
+        body>div {float: left; margin: 50px 200px 0 10px;}
+        body::after {clear: both; display: block; content: '';}
+        /* 메뉴에 테두리 */
+        li {
+            width: 100px;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 30px;
+            color: black;}
+        li:hover {
+            background-color: darkgray;
+            color: white;
+        }
+        /* menu2 */
+        ul#menu2>li {float: left;}
+        ul#menu2::after {clear: both; display: block; content: '';}
+        ul#menu2>li>ul {display: none; margin-left: -1px;}
+        ul#menu2>li:hover>ul {display: block;}
+        li.a2 {border-left: none;}
+        li.b2 {border-top: none; border-bottom: none;}
+
+        /* menu1 */
     </style>
+    
 </head>
 <body>
     <div>
@@ -32,15 +60,15 @@
             <li><a href="#">MENU3</a>
                 <ul>
                     <li><a href="#">MENU3-1</a></li>
-                    <li><a href="#">MENU3-2</a></li>
+                    <li class="b2"><a href="#">MENU3-2</a></li>
                     <li><a href="#">MENU3-3</a></li>
                 </ul>
             </li>
 
-            <li><a href="#">MENU4</a>
+            <li class="a2"><a href="#">MENU4</a>
                 <ul>
                     <li><a href="#">MENU4-1</a></li>
-                    <li><a href="#">MENU4-2</a></li>
+                    <li class="b2"><a href="#">MENU4-2</a></li>
                     <li><a href="#">MENU4-3</a></li>
                 </ul>
             </li>

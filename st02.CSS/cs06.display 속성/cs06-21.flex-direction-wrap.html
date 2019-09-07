@@ -3,6 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        div#dir-row {
+            width: 500px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row; /* x축 방향으로 정렬. */
+            flex-wrap: nowrap; /* 자식 박스를 한줄로 배치. */
+        }
+        div#dir-row > div {width: 33.33%;}
+        div#dir-row > div.row1 {background-color: burlywood;}
+        div#dir-row > div.row2 {background-color: chartreuse;}
+        div#dir-row > div.row3 {background-color: cyan;}
+
+        div#dir-col {
+            width: 500px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column; /* ㅛ축 방향으로 정렬. */
+            flex-wrap: nowrap; /* 자식 박스를 한줄로 배치. */
+        }
+        div#dir-col > div {height: 33.33%;}
+        div#dir-col > div.row1 {background-color: burlywood;}
+        div#dir-col > div.row2 {background-color: chartreuse;}
+        div#dir-col > div.row3 {background-color: cyan;}
+
+        div#wrap-row {
+            width: 500px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row; /* x축 방향으로 정렬. */
+            flex-wrap: wrap; /* 자식 박스를 여러줄로 배치. */
+        }
+        div#wrap-row > div {width: 250px;}
+        div#wrap-row > div.row1 {background-color: burlywood;}
+        div#wrap-row > div.row2 {background-color: chartreuse;}
+        div#wrap-row > div.row3 {background-color: cyan;}
+
+        div#wrap-col {
+            width: 500px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column; /* y축 방향으로 정렬. */
+            flex-wrap: wrap; /* 자식 박스를 여러줄로 배치. */
+        }
+        div#wrap-col > div {height: 100px;}
+        div#wrap-col > div.row1 {background-color: burlywood;}
+        div#wrap-col > div.row2 {background-color: chartreuse;}
+        div#wrap-col > div.row3 {background-color: cyan;}
+    </style>
 </head>
 <body>
     <div id="dir-row">
@@ -36,4 +90,4 @@
     </div>
 
 </body>
-</html>
+</html>

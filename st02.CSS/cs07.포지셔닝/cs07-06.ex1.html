@@ -3,6 +3,22 @@
 <head>
     <meta charset="utf-8">
     <title>절대 좌표 실습</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        div.absolute {
+            position: absolute;
+            left: 250px;
+            top: 350px;
+        }
+        h3.pos_left {
+            position: relative;
+            left: -100px;
+        }
+        h3.pos_right {
+            position: relative;
+            left: 100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,8 +39,8 @@ h2 태그의 위치는 절대 좌표계(0, 0)를 기준으로 설정
 
     <div class="absolute">
         <h2>절대좌표를 적용한 텍스트 :: 원래 위치!!!</h2>
-        <h3 class="pos_left">원래 위치에서 왼쪽으로 -100px 만큼 이동!!!</h3>
-        <h3 class="pos_right">원래 위치에서 오른쪽으로 +100px 만큼 이동!!!</h3>
+        <h3 class="pos_left">현재 위치에서 왼쪽으로 -100px 만큼 이동!!!</h3>
+        <h3 class="pos_right">현재 위치에서 오른쪽으로 +100px 만큼 이동!!!</h3>
     </div>
 
 </body>

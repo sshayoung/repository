@@ -2,13 +2,28 @@
 <html>
 <head>
     <title>CSS3 Property Basic</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        div#wrapper>div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        div.b1 {background-color:red; position: relative; left: 0; top: 0;}
+        div.b2 {background-color: orange; position: relative; left: 70px; top: -70px; z-index: 10;}
+        div.b3 {background-color: royalblue; position: relative; left: 20px; top: -130px;}
+        div#wrapper {
+            height: 110px;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <h1>Lorem ipsum dolor amet</h1>
     <div id="wrapper">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
     </div>
 </body>
-</html>
+</html>
