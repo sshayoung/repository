@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 모든 페이지에서 참조하는 CSS는 css/default.css -->
+    <link rel="stylesheet" href="css/default.css">
+    <style>
+        /* 이 페이지에서만 사용되는 CSS 작성 */
+         /* div#content {width: 700px; height: 100px; background-color: lightgray; margin: auto; padding: 100px 0; border: 1px solid black; line-height: 50px;}
+        form.login {width: 390px; height: 150px; margin: auto;}
+        div#login>div {margin: 30px 0 0 0 ;}
+        div#login {float: left; width: 300px;height: 150px;}
+        div>label {float: left;}
+        div>input {float: right;}
+        input#id,input#pass {border: 1px solid black; width: 200px; height: 20px;}
+        input#submit {border: 1px solid black; background-color: white; width: 70px; height: 60px; float: right;} */
+
+        footer {margin: 30px 0 0 0;}
+        div#content { width: 700px; height: 300px; background-color: lightgray; margin: auto; box-sizing: border-box; padding: 50px;border:1px solid black;}
+        div#login { width: 500px; margin: auto;}
+        div#login-left { float:left; width: 70%; background-color: lightgray;}
+        div#login-right { float:right; width: 30%; background-color: lightgray;}
+        ul#login-link>li {float: left; margin:30px 10px;}
+        div#login-left>div {margin: 20px 0;}
+        input#id,input#password {border:1px solid black;}
+        label {width: 100px; display: inline-block;}
+        li>a {text-decoration: none;}
+        input#login-submit {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 10px;
+            top: 15px;
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <!-- 바뀌지 않는 header 부분을 추가 ,바뀌지 않는 부분은 css/default.css 에 추가한다.-->
+            <div id="header-left">
+                <!-- float:left -->
+                <img src="./images/logo.png">
+                <span id=name>Android</span>
+            </div>
+    
+            <div id="header-right">
+                <!-- float:right -->
+                <ul>
+                    <li>홈</li>
+                    <li>로그인</li>
+                    <li>회원가입</li>
+                    <li>
+                        <form method="get" action="https://search.naver.com/search.naver">
+                            <input type="text" name="" id="search" placeholder="search">
+                            <input type="image" id="search-submit" src="./images/search.png">
+                        </form>
+                    </li>
+                </ul>
+    
+            </div>
+    
+        </header>
+    
+        <nav id="menu">
+            <!-- 메뉴 부분을 추가 ,바뀌지 않는 부분은 css/default.css 에 추가한다. -->
+            <ul>
+                <li>ABOUT</li>
+                <li>GALLERY</li>
+                <li>OFFICE</li>
+                <li>SERVICE</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    
+        <div id="content">
+         <form action="" method="post">
+            <div id="login">
+
+                <div id="login-left">
+                    <div>
+                        <label for="id">아이디</label>
+                        <input type="text" name="" id="id" placeholder="id를 입력하세요">
+                    </div>
+                    <div>
+                        <label for="password">패스워드</label>
+                        <input type="text" name="" id="password" placeholder="password를 입력하세요">
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="saveid">
+                        <label for="saveid">아이디 저장</label>
+                    </div>
+                    <div>
+                        <ul id="login-link">
+                            <li>
+                                <a href="register1.html">회원가입</a>
+                            </li>
+                            <li>
+                                <a href="">아이디찾기</a>
+                            </li>
+                            <li>
+                                <a href="">비밀번호찾기</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="login-right">
+                    <input type="submit" value="로그인" id="login-submit">
+                </div>
+
+            </div>
+         </form>
+            
+        </div>
+    
+        <footer>
+            <!-- 바뀌지 않는 footer 부분을 추가 ,바뀌지 않는 부분은 css/default.css 에 추가한다. -->
+            <div id="footer-left">
+    
+            </div>
+            <div id="footer-right">
+                <div class="number">031-899-9100</div>
+                <div class="02">㈜웹퍼블리셔반 대표이사 김윤경 사업자번호 <span class="number">222-88-66666</span></div>
+                <div class="03">경기도 용인시 기흥구 용구대로<span class="number">2311</span> 경기도여성능력개발센타</div>
+                <div class="number">Copyright © ACG Inc. All Rights Reserved</div>
+    
+            </div>
+    
+        </footer>
+    </div>
+</body>
+</html>

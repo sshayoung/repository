@@ -1,0 +1,29 @@
+/* Reset CSS  */
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video { max-width:100%; border:0; vertical-align:top; }
+a { vertical-align:top; text-decoration:none; color:#000; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+body {padding: 20px; font-family:'NanumGothicWeb', '돋움'; font-size:10pt; line-height:1; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+
+div#wrap {width: 960px; margin: auto;}
+header {width: 960px; height: 50px; }
+header>div {vertical-align:middle;}
+div#header-left {float: left; font-size: 30pt; height:50px;}
+div#header-right {float: right; height:30px;}
+div#header-right li {display:inline-block; border: 1px solid black; background-color: white; height: 20px; padding: 2px 5px; line-height:20px; font-size: 10pt;}
+form { height: 20px; padding: 0; line-height:15px;}
+input#search {}
+nav#menu {height: 40px; margin: 20px 0 ; border:1px solid black; background-color: white; line-height:40px;}
+nav#menu li {float:left; margin: 0 0 0 30px; display:inline-block; font-size: 11pt; }
+nav#menu::after {clear: both display: block content: "";}
+footer {height: 100px; padding: 15px; border:1px solid black; background-color: white;}
+div#footer-right {float: right; text-align: right; line-height: 25px; font-size: 11pt;}
+.number {font-weight: bold;}
+span#name { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: crimson;}
+div#content {; } 

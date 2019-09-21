@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 모든 페이지에서 참조하는 CSS는 css/default.css -->
+    <link rel="stylesheet" href="css/default.css">
+    <style>
+        /* 이 페이지에서만 사용되는 CSS 작성 */
+        
+        body {
+            background-image: url(./images/background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            /* 화면에 꽉 차게 채우기 */
+            min-width: 100%;
+            min-height: 100%;
+        }
+        div#content {height: 150px; padding: 200px 0; color:whitesmoke; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; line-height: 60px;}
+        div#smart { font-size: 50pt; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+        <!-- 바뀌지 않는 header 부분을 추가 ,바뀌지 않는 부분은 css/default.css 에 추가한다.-->
+        <div id="header-left">
+            <!-- float:left -->
+            <img src="./images/logo.png" >
+            <span id=name>Android</span>
+        </div>
+
+        <div id="header-right">
+            <!-- float:right -->
+            <ul>
+                <li>홈</li>
+                <li>로그인</li>
+                <li>회원가입</li>
+                <li>
+                    <form method="get" action="https://search.naver.com/search.naver"  >
+                        <input type="text" name="" id="search" placeholder="search">
+                        <input type="image" id="search-submit" src="./images/search.png">
+                    </form>
+                </li>
+            </ul>
+            
+        </div>
+
+        </header>
+
+        <nav id="menu">
+            <!-- 메뉴 부분을 추가 ,바뀌지 않는 부분은 css/default.css 에 추가한다. -->
+            <ul>
+                <li>ABOUT</li>
+                <li>GALLERY</li>
+                <li>OFFICE</li>
+                <li>SERVICE</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <!-- 바뀌는 컨텐츠 부분을 추가 -->
+            <div id="smart">smart tech+design</div>
+            <div>당신의 기대를 뛰어넘는 스마트한 기능의 앱과 아름다운 디자인까지 구현하는 최고의 파트너</div>
+        </div>
+
+        <footer>
+            <!-- 바뀌지 않는 footer 부분을 추가 ,바뀌지 않는 부분은 css/default.css 에 추가한다. -->
+            <div id="footer-left">
+            
+            </div>
+            <div id="footer-right">
+                <div class="number">031-899-9100</div>
+                <div class="02">㈜웹퍼블리셔반 대표이사 김윤경 사업자번호 <span class="number">222-88-66666</span></div>
+                <div class="03">경기도 용인시 기흥구 용구대로<span class="number">2311</span>  경기도여성능력개발센타</div>
+                <div class="number">Copyright © ACG Inc. All Rights Reserved</div>
+                
+            </div>
+           
+        </footer>
+    </div>
+    
+    
+</body>
+</html>
